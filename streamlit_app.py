@@ -18,7 +18,7 @@ if selected == 'Harian':
         day = st.slider('Berapa hari?', 0, 100)
     with st.spinner('proses inference model...'):
         model_path = 'best_model.h5'
-        data_path = 'harga_emas.csv'
+        data_path = 'harga_emasss.csv'
         df, df_fore = forecast(model_path, data_path, day)
     st.write('Prediksi Data Harian')
     
