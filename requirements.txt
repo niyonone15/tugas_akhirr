@@ -3,4 +3,5 @@ streamlit-option-menu==0.3.6
 forecast==0.1.0
 tensorflow
 scikit-learn
+pandas
 click==8.0
