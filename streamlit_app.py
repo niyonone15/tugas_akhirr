@@ -98,13 +98,9 @@ if selected == 'Bulanan':
 ### Load DataFrame
 if selected == 'Data Harga Emas':
     st.write('Data Harga Emas dari Tanggal 03 Januari 2019 sampai 03 Januari 2023 dari Website pusatdata.kontan.co.id. Dataset yang telah diambil dengan jumlah data yang digunakan sebanyak 1285 baris.')
-    excel_file = 'harga_emasss.xlsx'
-    sheet_name = 'Sheet1'
+    excel_file = 'harga_emasss.csv'
     title="Data Harga Emas Tahun 2019-2023"
-    df = pd.read_excel(excel_file,
-                    sheet_name=sheet_name,
-                    usecols='A:B',
-                    header=0)
+    df = pd.read_csv(excel_file, sep=";")
     st.dataframe(df)
 
 ### Home Page
